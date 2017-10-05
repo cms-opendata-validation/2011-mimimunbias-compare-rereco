@@ -11,7 +11,7 @@ cd CMSSW_5_3_32/src
 cmsenv
 git clone https://github.com/katilp/compare-rereco.git
 
-cd compare-rereco.git
+cd compare-rereco
 ln -sf /cvmfs/cms-opendata-conddb.cern.ch/FT_53_LV5_AN1_RUNA FT_53_LV5_AN1
 ln -sf /cvmfs/cms-opendata-conddb.cern.ch/FT_53_LV5_AN1_RUNA.db FT_53_LV5_AN1_RUNA.db
 cmsRun demoanalyzer_cfg.py
