@@ -15,7 +15,7 @@ mkdir WorkDir
 cd WorkDir
 git clone https://github.com/cms-opendata-validation/2011-minimumbias-compare-rereco.git
 
-cd compare-rereco
+cd 2011-minimumbias-compare-rereco
 scram b
 ln -sf /cvmfs/cms-opendata-conddb.cern.ch/FT_53_LV5_AN1_RUNA FT_53_LV5_AN1
 ln -sf /cvmfs/cms-opendata-conddb.cern.ch/FT_53_LV5_AN1_RUNA.db FT_53_LV5_AN1_RUNA.db
