@@ -29,7 +29,7 @@ process.source = cms.Source("PoolSource",
                             #firstEvent = cms.untracked.uint32(488034889)
                             )
 
-process.demo = cms.EDAnalyzer('DemoAnalyzer',
+process.demo = cms.EDAnalyzer('PhysicsObjectsHistos',
 
                                          minTracks=cms.untracked.uint32(0)
                               )
