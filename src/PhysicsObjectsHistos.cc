@@ -75,10 +75,10 @@
 // class decleration
 //
 
-class DemoAnalyzer : public edm::EDAnalyzer {
+class PhysicsObjectsHistos : public edm::EDAnalyzer {
 public:
-  explicit DemoAnalyzer(const edm::ParameterSet&);
-  ~DemoAnalyzer();
+  explicit PhysicsObjectsHistos(const edm::ParameterSet&);
+  ~PhysicsObjectsHistos();
 
 
 private:
@@ -143,7 +143,7 @@ TH1D *h64;
 // constructors and destructor
 //
 
-DemoAnalyzer::DemoAnalyzer(const edm::ParameterSet& iConfig) :
+PhysicsObjectsHistos::PhysicsObjectsHistos(const edm::ParameterSet& iConfig) :
   minTracks_(iConfig.getUntrackedParameter<unsigned int>("minTracks",0))
 {
 
@@ -313,7 +313,7 @@ h64->GetYaxis()->SetTitle("Number of Events");
 }
 
 
-DemoAnalyzer::~DemoAnalyzer()
+PhysicsObjectsHistos::~PhysicsObjectsHistos()
 {
  
   // do anything here that needs to be done at desctruction time
@@ -328,7 +328,7 @@ DemoAnalyzer::~DemoAnalyzer()
 
 // ------------ method called to for each event  ------------
 void
-DemoAnalyzer::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
+PhysicsObjectsHistos::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
 {
   using namespace edm;
 
@@ -451,14 +451,14 @@ for(reco::PhotonCollection::const_iterator itphotons = photons->begin();
 
 // ------------ method called once each job just before starting event loop  ------------
 void 
-DemoAnalyzer::beginJob()
+PhysicsObjectsHistos::beginJob()
 {
 }
 
 // ------------ method called once each job just after ending the event loop  ------------
 void 
-DemoAnalyzer::endJob() {
+PhysicsObjectsHistos::endJob() {
 }
 
 //define this as a plug-in
-DEFINE_FWK_MODULE(DemoAnalyzer);
+DEFINE_FWK_MODULE(PhysicsObjectsHistos);
