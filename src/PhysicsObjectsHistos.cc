@@ -1,18 +1,11 @@
 // -*- C++ -*-
 //
-// Package:    DemoAnalyzer
-// Class:      DemoAnalyzer
+// Class:      PhysicsObjectsHistos
 // 
-/**\class DemoAnalyzer DemoAnalyzer.cc Demo/DemoAnalyzer/src/DemoAnalyzer.cc
+/**\class PhysicsObjectsHistos PhysicsObjectsHistos.cc 
 
- Description: [one line class summary]
-
- Implementation:
-     [Notes on implementation]
 */
 //
-// Original Author:  Sudhir Malik,8 R-016,+41227670861,
-//         Created:  Mon Jun 13 20:56:30 CEST 2011
 // $Id$
 //
 //
