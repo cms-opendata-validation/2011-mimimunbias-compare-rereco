@@ -11,7 +11,7 @@ Run this code in CMS Open Data VM [http://opendata.cern.ch/VM/CMS/2011]
 cmsrel CMSSW_5_3_32
 cd CMSSW_5_3_32/src
 cmsenv
-git clone https://github.com/cms-opendata-validation/compare-rereco.git
+git clone https://github.com/cms-opendata-validation/2011-minimumbias-compare-rereco.git
 
 cd compare-rereco
 scram b
