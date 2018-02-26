@@ -13,7 +13,7 @@ cd CMSSW_5_3_32/src
 cmsenv
 mkdir WorkDir
 cd WorkDir
-git clone https://github.com/cms-opendata-validation/2011-minimumbias-compare-rereco.git
+git clone git://github.com/cms-opendata-validation/2011-minimumbias-compare-rereco.git
 
 cd 2011-minimumbias-compare-rereco
 scram b
